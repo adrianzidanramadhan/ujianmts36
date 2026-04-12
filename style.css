@@ -3,12 +3,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  font-style: normal;
 }
+
 body {
   background: #fff;
 }
+
 header {
   width: 100%;
   height: auto;
@@ -25,13 +25,13 @@ header {
   position: absolute;
 }
 
-header h2 {
-  font-size: 32px;
+header h1 {
+  font-size: 72px;
   color: #01141A;
 }
 
-header h1 {
-  font-size: 72px;
+header h2 {
+  font-size: 32px;
   color: #01141A;
 }
 
@@ -48,6 +48,7 @@ header h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .container h1 {
@@ -92,6 +93,9 @@ header h3 {
 }
 
 .pelajaran {
+  background: rgba(255,255,255,0.3);
+  padding: 10px;
+  border-radius: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -104,13 +108,11 @@ header h3 {
 }
 
 .pelajaran a {
-  color: #01141A;
-  border: 1px #fff solid;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 8px;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
   text-decoration: none;
-  font-size: 24px;
 }
 
 .pemisah{
@@ -120,12 +122,31 @@ header h3 {
   margin-top: 1rem;
 }
 
-footer {
-  min-height: 3rem;
-  display: flex;
-  justify-content: center;
-  background-color: #77dd77;
+/* STATUS LINK */
+.time-link.active {
+  background: #01141A;
+  color: white;
 }
+
+.time-link.disabled {
+  background: gray;
+  color: white;
+  pointer-events: none;
+}
+
+.status {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background: #77dd77;
+}
+
 
 /* Media query for tablets */
 @media screen and (min-width: 768px) and (max-width: 1085px) {
@@ -166,7 +187,7 @@ footer {
     font-size: 18px;
   }
 
-  .pelajaran a {
+  /* .pelajaran a {
     color: #01141A;
     border: 1px #fff solid;
     padding-left: 4px;
@@ -174,7 +195,7 @@ footer {
     border-radius: 8px;
     text-decoration: none;
     font-size: 18px;
-  }
+  } */
 
 }
 
@@ -221,7 +242,7 @@ footer {
     font-size: 12px;
   }
 
-  .pelajaran a {
+  /* .pelajaran a {
     color: #01141A;
     border: 1px #fff solid;
     padding-left: 4px;
@@ -229,6 +250,6 @@ footer {
     border-radius: 8px;
     text-decoration: none;
     font-size: 12px;
-  }
+  } */
 
 }
